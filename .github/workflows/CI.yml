@@ -20,9 +20,9 @@ jobs:
         with:
           java-version: '8'
           distribution: 'adopt'
-          server-id: github # Value of the distribuionManagement/repository/id field of the pom.xml
+          server-id: github # Value of the distributionManagement/repository/id field of the pom.xml
           settings-path: ${{ github.workspace }} # location for the settings.xml file
-      - name: set up grale
+      - name: set up gradle
         uses: gradle/gradle-build-action@v2
         with:
           gradle-version: 2.1
